@@ -1,0 +1,45 @@
+Cab: 
+a
+12.937502,77.600205
+b
+12.927377,77.600498
+c
+12.922682,77.610174
+d
+12.925703,77.625463
+e
+12.936563,77.627557
+f
+12.947421,77.606572
+
+user
+source 
+u1
+12.937787,77.610467
+
+dest 
+12.965954,77.586634
+
+
+a u1
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=12.937502,77.600205&destinations=12.937787,%2077.610467&mode=car&language=fr-FR&key=AIzaSyC6wTdayVoub213ybE41BsJ1oU6Spb2DQE
+
+b u1
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=12.927377,77.600498&destinations=12.937787,%2077.610467&mode=car&language=fr-FR&key=AIzaSyC6wTdayVoub213ybE41BsJ1oU6Spb2DQE
+
+c u1
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=12.922682,77.610174&destinations=12.937787,%2077.610467&mode=car&language=fr-FR&key=AIzaSyC6wTdayVoub213ybE41BsJ1oU6Spb2DQE
+
+d u1
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=12.925703,77.625463&destinations=12.937787,%2077.610467&mode=car&language=fr-FR&key=AIzaSyC6wTdayVoub213ybE41BsJ1oU6Spb2DQE
+
+e u1
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=12.936563,77.627557&destinations=12.937787,%2077.610467&mode=car&language=fr-FR&key=AIzaSyC6wTdayVoub213ybE41BsJ1oU6Spb2DQE
+
+f u1 
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=12.947421,77.606572&destinations=12.937787,%2077.610467&mode=car&language=fr-FR&key=AIzaSyC6wTdayVoub213ybE41BsJ1oU6Spb2DQE
+
+
+u1 
+source destination 
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=12.937787,77.610467&destinations=12.965954,77.586634&mode=car&language=fr-FR&key=AIzaSyC6wTdayVoub213ybE41BsJ1oU6Spb2DQE
