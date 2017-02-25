@@ -1,0 +1,30 @@
+
+Query To Find Shortest Distances:
+
+SELECT id,address,lat,lng, ( 6371 * ACOS( COS( RADIANS(12.925419) ) * COS( RADIANS( lat ) ) * COS( RADIANS( lng ) - RADIANS(77.645222) ) + SIN( RADIANS(12.925419) ) * SIN( RADIANS( lat ) ) ) ) AS distance FROM markers HAVING distance < 25 ORDER BY distance LIMIT 0 , 20;
+
+Captains Input Records = Captain Location
+13.042456, 77.591330 = Hebbala
+12.922975, 77.606925 = BTM 
+13.135785, 77.604998 = Yelahanka
+12.926918, 77.630218 = Koramangala
+12.917345, 77.624037 = Silkboard
+12.862687, 77.661837 = E.City
+
+
+UserLocation = for SearchCabs 
+12.925419, 77.645222 = JakkaSandra ,close TO Agara = User loc FOR search
+
+
+Results:
+id	address			lat			lng			distance
+4	Blr-Kormangala	12.926918	77.630219	1.6345570044243714
+5	Blr-SilkBoard	12.917345	77.624039	2.4651266605821616
+2	Blr-BTM			12.922975	77.606926	4.159338550222132
+6	Blr-ECity		12.862687	77.661835	7.204135206575311
+1	Blr-Hebbal		13.042456	77.591331	14.263828370553378
+3	Blr-Yelhanka	13.135785	77.604996	23.794099731699287
+
+
+
+12.926918, 77.630218
