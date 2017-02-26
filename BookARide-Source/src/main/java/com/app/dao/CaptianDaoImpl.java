@@ -35,10 +35,10 @@ public class CaptianDaoImpl implements CaptianDao {
 	@Override
 	public CaptainUpdate updateCaptianStatus(CaptainUpdate captianUpdate) {
 		Session session = db1SessionFactory.getCurrentSession();
-		String hql = "update CaptianUpdate set lat = :userLat, lng =:userLng, etdMin =:etdMin where captianId =:captianId";
+		String hql = "update CaptainUpdate set lat = :userLat, lng =:userLng, etdMin =:etdMin where captainId =:captainId";
 		
 		Query query = session.createQuery(hql);
-		query.setLong("captianId", captianUpdate.getCaptainId());
+		query.setLong("captainId", captianUpdate.getCaptainId());
 		query.setFloat("userLat", captianUpdate.getLat());
 		query.setFloat("userLng", captianUpdate.getLng());
 		query.setInteger("etdMin", captianUpdate.getEtdMin());
