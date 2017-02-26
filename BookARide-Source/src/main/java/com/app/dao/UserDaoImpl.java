@@ -21,10 +21,6 @@ public class UserDaoImpl implements UserDao {
 	@Qualifier("db1SessionFactory")
 	SessionFactory db1SessionFactory;
 
-	@Autowired
-	@Qualifier("db2SessionFactory")
-	SessionFactory db2SessionFactory;
-
 	@Override
 	public User addUser(User req) {
 		Session session = db1SessionFactory.getCurrentSession();

@@ -7,7 +7,6 @@ import com.app.beans.ConfirmCabRQ;
 import com.app.beans.ConfirmCabRS;
 import com.app.beans.StartRideRQ;
 import com.app.beans.StartRideRS;
-import com.app.entity.common.SubscriptionPlans;
 import com.app.entity.db1.Captain;
 
 public interface CaptianService {

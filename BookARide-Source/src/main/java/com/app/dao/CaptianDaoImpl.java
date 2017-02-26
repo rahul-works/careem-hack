@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.app.beans.CaptianStatusRQ;
-import com.app.entity.common.SubscriptionPlans;
 import com.app.entity.db1.Captain;
 import com.app.entity.db1.CaptainUpdate;
 
@@ -18,10 +17,6 @@ public class CaptianDaoImpl implements CaptianDao {
 	@Autowired
 	@Qualifier("db1SessionFactory")
 	SessionFactory db1SessionFactory;
-
-	@Autowired
-	@Qualifier("db2SessionFactory")
-	SessionFactory db2SessionFactory;
 
 	@Override
 	public Captain addCaptian(Captain addCaptianRQ) {

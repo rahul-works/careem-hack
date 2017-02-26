@@ -19,9 +19,6 @@ public class CaptianRidesDaoImpl implements CaptainRidesDao {
 	@Qualifier("db1SessionFactory")
 	SessionFactory db1SessionFactory;
 
-	@Autowired
-	@Qualifier("db2SessionFactory")
-	SessionFactory db2SessionFactory;
 
 	@Override
 	public CaptainRides bookARide(CaptainRides captainRides) {
